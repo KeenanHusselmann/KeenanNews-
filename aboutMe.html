@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="contactdetails.html">Contact Me</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <h1>Who is Keenan Husselmann...?</h1>
+        <h2>Welcome to my personal webpage! </h2>
+        <p>
+           I am a second-year computer science student specializing in software development. 
+           I enjoy problem-solving and working on various tech projects.
+        </p>
+    </div>
+    <style>
+        .banner {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 150px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .banner:hover {
+            background-color: #888;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title -->
+    <h1 style="font-size: 48px;">My Favorite Things</h1>
+
+    <!-- Image with Description -->
+    <img src="images/coffee.jpg" alt="Fresh roasted  coffee beans" style="width: 400px; height: auto;">
+    <p>Freshly roasted coffee beans.</p>
+
+    <!-- Clickable Link -->
+    <p><a href="https://www.w3schools.com/" target="_blank">Click here to visit my favorite website!</a></p>
+
+    <!-- Banner Ad -->
+    <div class="banner" onclick="changeAd()">Click or Hover over me for a new ad!</div>
+    
+    <h2>My Favorite Song</h2>
+    <p>This is one of my favorite songs!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/32HANv-bdJs" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+ 
+
+    <!-- JavaScript to Change Ad -->
+    <script>
+        function changeAd() {
+            document.querySelector('.banner').innerHTML = '<img src="coffeeAd.avif" alt="Ad Image" style="width:25%; height:auto;">';;
+            document.querySelector('.banner').style.backgroundColor = 'white';
+        }
+    </script>
+
+        <footer>
+            &copy; Copyright 2024 Keenan Husselmann
+        </footer>
+</body>
+</html>
